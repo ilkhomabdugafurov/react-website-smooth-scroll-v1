@@ -1,12 +1,20 @@
 import React from 'react';
-import {Nav, NavbarContainer} from "./NavbarElements";
+import {Nav, NavbarContainer, NavLogo} from "./NavbarElements";
 
 const Navbar = () => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo>dolla</NavLogo>
+                    <NavLogo to={"/"}>dolla</NavLogo>
+                    <MobileIcon>
+                        <FaBars/>
+                    </MobileIcon>
+                    <NavMenu>
+                        <NavItem>
+                            <NavLinks to={"about"}>About</NavLinks>
+                        </NavItem>
+                    </NavMenu>
                 </NavbarContainer>
             </Nav>
         </>
